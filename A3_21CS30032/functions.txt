@@ -1,0 +1,14 @@
+
+pyrosetta.init("-in::file::fullatom -mute all") : Initializes the PyRosetta environment.
+pyrosetta.pose_from_sequence(sequence,res_type) : Returns a Pose object generated from a single-letter sequence of amino acid residues in sequence using the res_type
+
+pose.set_phi(i, -150) : 
+pose.set_psi(i, 150) : 
+pose.set_omega(i, 180) : 
+
+
+SwitchResidueTypeSetMover() : Toggles between centroid and full atom modes. If used with 'centroid' , it converts the full atom pose to centroid representation where sidechains are reduced to simple atoms.
+
+References : 
+    https://graylab.jhu.edu/PyRosetta.documentation/pyrosetta.html
+    https://docs.rosettacommons.org/manuals/archive/rosetta_3.6_user_guide/core+protocols/d8/d0b/classcore_1_1kinematics_1_1_move_map.html
